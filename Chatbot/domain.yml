@@ -8,23 +8,52 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - is_restaurant_open
+  - when_is_restaurant_open
+  - show_menu
+
+
+entities:
+  - when
+
+actions:
+  - is_restaurant_open
+  - when_is_restaurant_open
+  - show_menu
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! I'm interactive restaurant bot. How can I help you?"
+  - text: "Hey! I'm restaurant bot. How can I help you?"
+  - text: "Nice to see you. How can I help you?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
+  utter_offer_help:
+  - text: "How can I help you?"
+  - text: "What I can do for you?"
+  - text: "What you want to know ?"
+
   utter_did_that_help:
   - text: "Did that help you?"
+  - text: "Did it solve your problems?"
+  - text: "Was it a solution for your problems?"
+
+  utter_offer_more_help:
+  - text: "Can I do more for you?"
+
 
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Good, carry on!"
+  - text: "Have a nice day, carry on!"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "Goodbye"
+  - text: "Thanks for conversation, bye"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
