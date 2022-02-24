@@ -90,3 +90,31 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: show_menu
+  examples: |
+    - Can you list menu?
+    - Can you give me menu?
+    - Can you tell me what I can order?
+    - Can you show me menu?
+    - show menu?
+    - menu
+
+- intent: is_restaurant_open
+  examples: |
+    - Is restaurant open [now](when)?
+    - Is restaurant open [today](when)?
+    - Are you open [now](when)?
+    - Are you open [today](when)?
+    - Is restaurant [now](when)?
+    - Is restaurant [today](when)?
+    - Open [now](when)?
+    - Open [today](when)
+
+
+- intent: when_is_restaurant_open
+  examples: |
+    - When is restaurant open?
+    - Open hours?
+    - open hours
+    - Opening hours
